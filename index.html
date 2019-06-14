@@ -1,0 +1,110 @@
+<html>
+
+	<head>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Document Control</title>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper.JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<!--header-->
+			<div class="header">
+				<table width="100%" cellspacing="0" cellpadding="0">
+				  <tr>
+						<td><img src="images/co-branded-logo_300x69.jpg" width="300" height="69"></td>
+						<td align="right"><img src="images/doccontrol.jpg" width="350" height="45"></td>
+				  </tr>
+				</table>
+			</div>
+			<form method="GET" action="docindex-001.asp">
+			  <table bgcolor="#8BA8B7" width="100%">
+					<tr>
+					  <td colspan="5" align="center" height="24"><h5>Search Quality System Documentation</h5></td>
+					</tr>
+					<tr>
+					  <td width="144" valign="bottom">
+					    Search for
+						  <select size="1" name="Category" tabindex="1">
+								<option selected value="ALL">Category</option>
+								<option value="Q">Quality Policy</option>
+								<option value="P">Quality Procedure</option>
+								<option value="N">Quality Plan</option>
+								<option value="S">Specification</option>
+								<option value="W">Work Instruction</option>
+								<option value="T">Technical Bulletin</option>
+								<option value="M">Product Manual</option>
+								<option value="F">Form</option>
+								<option value="A">Addendum</option>
+								<option value="R">Reference</option>
+						  </select>
+					  </td>
+					  <td width="209" valign="bottom">
+							By (Optional)
+							<select size="-1" name="Department" tabindex="2">
+								<option value="ALL">Department</option>
+								<option>Executive</option>
+								<option>Sales &amp; Marketing</option>
+								<option>Engineering</option>
+								<option>Material Control</option>
+								<option>Manufacturing</option>
+								<option>Quality Assurance</option>
+								<option>Administrative Support</option>
+								<option>UHP Technology</option>
+								<option>Customer Service</option>
+								<option>Information &amp; Communication</option>
+							</select>
+					  </td>
+					  <td width="149" valign="bottom">
+							Title Keyword
+							<input type="text" name="title" tabindex="3">
+					  </td>
+					  <td width="142" align="center" rowspan="2" valign="middle">
+							Sort By:
+							<select name="sort" tabindex="5">
+								<option value="System.FileName">Filename</option>
+								<option value="System.Title">Title</option>
+							</select>
+							<div style="padding-top:0px;"><input type="submit" value="Show Results" name="B1" style="font-weight: bold" tabindex="6"></div>
+					  </td>
+					  <td width="1"><div id="hitCount"></div></td>
+					</tr>
+					<tr>
+					  <td width="144"><font size="-1">&nbsp;</font></td>
+					  <td width="209">Document Number / File Name<input type="text" name="docnumber" size="20" value tabindex="4"></td>
+					  <!--<td width="149"><font size="-1">and/or full text <input type="text" name="fulltext" size="20" value> </font></td>-->
+					</tr>
+			  </table>
+			  <table width=100%;>
+					<tr>
+					  <td align="center">
+							<a href="DocCodes.htm"><img alt="Document Control Codes" src="images/DocCodes.JPG" width="124" height="150" class="style2"></a>
+							<br>
+							<span>
+								<strong>Document Control Codes</strong>
+								<br>
+								<span>per P250-002, Rev S</span>
+							</span>
+						</td>
+					</tr>
+			  </table>
+			  <table width="100%" height="45">
+					<tr>
+					  <td align="center" bgcolor="#D9D6CF" height="41" valign="middle">
+						  <strong><a href="http://nd-twister.entegris.com/spg/">SPG Home</a></strong>
+						</td>
+					</tr>
+			  </table>
+			</form>
+		</div>
+	</body>
+</html>
